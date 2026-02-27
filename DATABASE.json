@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Hello World",
+    "description": "The classic first program. Use the `print()` function to output text to the screen.",
+    "codeSnippet": "print(\"Hello, World!\")",
+    "output": "Hello, World!",
+    "id": "de817c58-a6ac-41c6-bab7-5b221313983c"
+  },
+  {
+    "title": "Variables",
+    "description": "Variables are containers for storing data values. You don't need to declare a type, just assign a value.",
+    "codeSnippet": "name = \"Alice\"\nage = 25\nprint(name, \"is\", age)",
+    "output": "Alice is 25",
+    "id": "82249187-1145-4757-9409-6e59623040df"
+  },
+  {
+    "title": "Data Types",
+    "description": "Python has various data types like integers, floats, strings, and booleans. You can use `type()` to check.",
+    "codeSnippet": "x = 10\ny = 3.14\nis_python_fun = True\nprint(type(x), type(y), type(is_python_fun))",
+    "output": "<class 'int'> <class 'float'> <class 'bool'>",
+    "id": "84cfbb32-9411-459f-806c-86103c3a54fe"
+  },
+  {
+    "title": "Basic Math",
+    "description": "You can perform addition, subtraction, multiplication, and division easily.",
+    "codeSnippet": "a = 15\nb = 4\nprint(a + b)\nprint(a / b)",
+    "output": "19\n3.75",
+    "id": "43ba63aa-59b8-45f4-ad63-70e199fee58c"
+  }
+]
