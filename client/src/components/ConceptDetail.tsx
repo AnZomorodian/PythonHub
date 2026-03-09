@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "wouter";
-import { ArrowLeft, ExternalLink, Info } from "lucide-react";
+import { ArrowLeft, Copy, ExternalLink, Info, Clock } from "lucide-react";
 import type { Concept } from "@shared/schema";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,20 @@ import { Card } from "@/components/ui/card";
 import { CodePane } from "@/components/CodePane";
 
 export function ConceptDetail({ concept }: { concept: Concept }) {
+  const [copied, setCopied] = React.useState(false);
+  
+  const handleCopyCode = () => {
+    navigator.clipboard.writeText(concept.codeSnippet).catch(() => null);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  const difficultyColor = {
+    beginner: "bg-green-500/20 text-green-700 border-green-200",
+    intermediate: "bg-yellow-500/20 text-yellow-700 border-yellow-200",
+    advanced: "bg-red-500/20 text-red-700 border-red-200"
+  }[concept.difficulty || "beginner"];
+
   return (
     <div className="grid gap-4 lg:grid-cols-[1.2fr_1fr]">
       <Card className="glass rounded-2xl p-5 md:p-6">
@@ -19,8 +33,14 @@ export function ConceptDetail({ concept }: { concept: Concept }) {
             <div className="min-w-0">
               <h1 className="title-ink truncate text-2xl md:text-3xl">{concept.title}</h1>
               <div className="mt-1 flex flex-wrap items-center gap-2">
-                <Badge variant="secondary">Beginner</Badge>
-                <Badge variant="outline">Python</Badge>
+                <Badge className={`${difficultyColor} border`}>{concept.difficulty}</Badge>
+                <Badge variant="outline">{concept.category}</Badge>
+                {concept.estimatedMinutes && (
+                  <Badge variant="secondary" className="gap-1">
+                    <Clock className="h-3 w-3" />
+                    {concept.estimatedMinutes}m
+                  </Badge>
+                )}
               </div>
             </div>
           </div>
@@ -49,6 +69,16 @@ export function ConceptDetail({ concept }: { concept: Concept }) {
         <div className="mt-5 space-y-4">
           <p className="text-sm leading-relaxed text-muted-foreground">{concept.description}</p>
 
+          {concept.tags && concept.tags.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {concept.tags.map((tag) => (
+                <Badge key={tag} variant="outline" className="text-xs">
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+          )}
+
           <div className="rounded-2xl border border-border bg-background/60 p-4">
             <div className="text-xs font-semibold text-foreground">Quick mental model</div>
             <div className="mt-1 text-sm text-muted-foreground">
@@ -65,6 +95,16 @@ export function ConceptDetail({ concept }: { concept: Concept }) {
                 }}
               >
                 Jump to code
+              </Button>
+
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleCopyCode}
+                className="gap-2"
+              >
+                <Copy className="h-4 w-4" />
+                {copied ? "Copied!" : "Copy code"}
               </Button>
 
               <Link

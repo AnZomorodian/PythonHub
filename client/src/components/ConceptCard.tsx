@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Badge } from "@/components/ui/badge";
 import { ChevronRight, Terminal, Text } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { Concept } from "@shared/schema";
@@ -12,6 +13,12 @@ export function ConceptCard({
   selected: boolean;
   onSelect: () => void;
 }) {
+  const difficultyColor = {
+    beginner: "bg-green-500/10 text-green-700 border-green-200",
+    intermediate: "bg-yellow-500/10 text-yellow-700 border-yellow-200",
+    advanced: "bg-red-500/10 text-red-700 border-red-200",
+  }[concept.difficulty || "beginner"];
+
   return (
     <button
       type="button"
@@ -42,15 +49,15 @@ export function ConceptCard({
             </div>
           </div>
 
-          <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
-            <span className="inline-flex items-center gap-1 rounded-full border border-border bg-background px-2 py-1">
-              <Terminal className="h-3.5 w-3.5" />
-              Code + output
-            </span>
-            <span className="hidden sm:inline-flex items-center gap-1 rounded-full border border-border bg-background px-2 py-1">
-              Click to study
-              <ChevronRight className="h-3.5 w-3.5 opacity-60" />
-            </span>
+          <div className="mt-3 flex flex-wrap items-center gap-2 text-xs">
+            <Badge className={`${difficultyColor} border text-xs`}>
+              {concept.difficulty || "beginner"}
+            </Badge>
+            {concept.category && (
+              <Badge variant="outline" className="text-xs">
+                {concept.category}
+              </Badge>
+            )}
           </div>
         </div>
 

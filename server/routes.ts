@@ -3,40 +3,75 @@ import { type Server } from "http";
 import { storage } from "./storage";
 import { api } from "@shared/routes";
 
-// Seed the database with some initial Python concepts
 async function seedDatabase() {
   const existing = await storage.getConcepts();
-  if (existing.length === 0) {
-    const initialConcepts = [
-      {
-        title: "Hello World",
-        description: "The classic first program. Use the `print()` function to output text to the screen.",
-        codeSnippet: 'print("Hello, World!")',
-        output: "Hello, World!"
-      },
-      {
-        title: "Variables",
-        description: "Variables are containers for storing data values. You don't need to declare a type, just assign a value.",
-        codeSnippet: 'name = "Alice"\nage = 25\nprint(name, "is", age)',
-        output: "Alice is 25"
-      },
-      {
-        title: "Data Types",
-        description: "Python has various data types like integers, floats, strings, and booleans. You can use `type()` to check.",
-        codeSnippet: 'x = 10\ny = 3.14\nis_python_fun = True\nprint(type(x), type(y), type(is_python_fun))',
-        output: "<class 'int'> <class 'float'> <class 'bool'>"
-      },
-      {
-        title: "Basic Math",
-        description: "You can perform addition, subtraction, multiplication, and division easily.",
-        codeSnippet: 'a = 15\nb = 4\nprint(a + b)\nprint(a / b)',
-        output: "19\n3.75"
-      }
-    ];
+  if (existing.length > 0) return;
 
-    for (const c of initialConcepts) {
-      await storage.createConcept(c);
+  const initialConcepts = [
+    {
+      title: "Hello World",
+      description: "The classic first program. Use the `print()` function to output text to the screen.",
+      codeSnippet: 'print("Hello, World!")',
+      output: "Hello, World!",
+      difficulty: "beginner" as const,
+      category: "fundamentals",
+      tags: ["output", "print"],
+      estimatedMinutes: 3
+    },
+    {
+      title: "Variables",
+      description: "Variables are containers for storing data values. You don't need to declare a type, just assign a value.",
+      codeSnippet: 'name = "Alice"\nage = 25\nprint(name, "is", age)',
+      output: "Alice is 25",
+      difficulty: "beginner" as const,
+      category: "fundamentals",
+      tags: ["variables", "assignment"],
+      estimatedMinutes: 4
+    },
+    {
+      title: "Data Types",
+      description: "Python has various data types like integers, floats, strings, and booleans.",
+      codeSnippet: 'x = 10\ny = 3.14\nprint(type(x), type(y))',
+      output: "<class 'int'> <class 'float'>",
+      difficulty: "beginner" as const,
+      category: "fundamentals",
+      tags: ["types", "integers"],
+      estimatedMinutes: 5
+    },
+    {
+      title: "Basic Math",
+      description: "Perform addition, subtraction, multiplication, and division operations.",
+      codeSnippet: 'a = 15\nb = 4\nprint(a + b, a / b)',
+      output: "19 3.75",
+      difficulty: "beginner" as const,
+      category: "fundamentals",
+      tags: ["math", "operators"],
+      estimatedMinutes: 4
+    },
+    {
+      title: "Strings",
+      description: "Strings are sequences of characters with powerful methods for manipulation.",
+      codeSnippet: 'text = "Python"\nprint(text.upper())\nprint(text[0:3])',
+      output: "PYTHON\nPyt",
+      difficulty: "beginner" as const,
+      category: "fundamentals",
+      tags: ["strings", "text"],
+      estimatedMinutes: 5
+    },
+    {
+      title: "Lists",
+      description: "Lists are ordered collections of items accessed by index starting from 0.",
+      codeSnippet: 'fruits = ["apple", "banana", "cherry"]\nprint(fruits[0])\nfruits.append("date")\nprint(len(fruits))',
+      output: "apple\n4",
+      difficulty: "beginner" as const,
+      category: "data-structures",
+      tags: ["lists", "arrays"],
+      estimatedMinutes: 6
     }
+  ];
+
+  for (const c of initialConcepts) {
+    await storage.createConcept(c);
   }
 }
 
