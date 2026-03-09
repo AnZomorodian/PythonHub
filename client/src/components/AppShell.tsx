@@ -1,9 +1,11 @@
 import * as React from "react";
 import { Link, useLocation } from "wouter";
-import { BookOpen, Code2, Home, Moon, Sun } from "lucide-react";
+import { BookOpen, Code2, Home, Moon, Sun, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { SidebarTrigger } from "@/components/ui/sidebar";
+import { Footer } from "@/components/Footer";
 
 function useTheme() {
   const [theme, setTheme] = React.useState<"light" | "dark">(() => {
@@ -31,14 +33,14 @@ export function AppShell({
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="min-h-screen bg-background app-grid">
+    <div className="flex flex-col min-h-screen bg-background app-grid">
       <div className="pointer-events-none fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(1200px_circle_at_20%_10%,hsl(var(--primary)/0.14),transparent_55%),radial-gradient(900px_circle_at_80%_10%,hsl(var(--accent)/0.14),transparent_55%),radial-gradient(900px_circle_at_50%_80%,hsl(var(--foreground)/0.08),transparent_55%)]" />
       </div>
 
       <header className="sticky top-0 z-50 border-b border-border/70 bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <Link
               href="/"
               className="group flex items-center gap-2 rounded-lg px-2 py-1 focus-ring"
@@ -47,7 +49,13 @@ export function AppShell({
                 <Code2 className="h-4 w-4" />
               </span>
               <div className="leading-tight">
-                <div className="text-sm font-semibold tracking-tight">{title}</div>
+                <div className="text-sm font-semibold tracking-tight flex items-center gap-2">
+                  {title}
+                  <Badge variant="secondary" className="text-xs ml-1">
+                    <Sparkles className="h-3 w-3 mr-1" />
+                    Beta
+                  </Badge>
+                </div>
                 <div className="text-xs text-muted-foreground">Python, from zero.</div>
               </div>
             </Link>
@@ -103,9 +111,11 @@ export function AppShell({
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+      <main className="flex-1 mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <div className="animate-float-in">{children}</div>
       </main>
+
+      <Footer />
     </div>
   );
 }
