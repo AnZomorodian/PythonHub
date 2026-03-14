@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Badge } from "@/components/ui/badge";
-import { ChevronRight, Terminal, Text } from "lucide-react";
+import { ChevronRight, Text, FlaskConical } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { Concept } from "@shared/schema";
 
@@ -19,14 +19,18 @@ export function ConceptCard({
     advanced: "bg-red-500/10 text-red-700 border-red-200",
   }[concept.difficulty || "beginner"];
 
+  const isProject = concept.category === "projects";
+
   return (
     <button
       type="button"
       onClick={onSelect}
+      data-testid={`concept-card-${concept.id}`}
       className={cn(
         "group w-full rounded-xl border border-border bg-card px-3 py-3 text-left shadow-sm transition-all duration-200 ease-out focus-ring",
         "hover:shadow-md",
         selected && "ring-2 ring-ring/25 shadow-md",
+        isProject && "border-pink-200/60 dark:border-pink-900/40",
       )}
     >
       <div className="flex items-start justify-between gap-3">
@@ -35,11 +39,16 @@ export function ConceptCard({
             <span
               className={cn(
                 "grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-border bg-muted text-foreground transition-transform duration-200 ease-out",
-                selected ? "bg-foreground text-background" : "group-hover:-translate-y-0.5",
+                selected
+                  ? isProject
+                    ? "bg-pink-500 text-white border-pink-500"
+                    : "bg-foreground text-background"
+                  : "group-hover:-translate-y-0.5",
+                isProject && !selected && "bg-pink-500/10 text-pink-600 border-pink-200",
               )}
               aria-hidden="true"
             >
-              <Text className="h-4 w-4" />
+              {isProject ? <FlaskConical className="h-4 w-4" /> : <Text className="h-4 w-4" />}
             </span>
             <div className="min-w-0">
               <div className="truncate text-sm font-semibold">{concept.title}</div>
@@ -53,11 +62,15 @@ export function ConceptCard({
             <Badge className={`${difficultyColor} border text-xs`}>
               {concept.difficulty || "beginner"}
             </Badge>
-            {concept.category && (
+            {isProject ? (
+              <Badge className="text-xs bg-pink-500/10 text-pink-600 border border-pink-200">
+                mini project
+              </Badge>
+            ) : concept.category ? (
               <Badge variant="outline" className="text-xs">
                 {concept.category}
               </Badge>
-            )}
+            ) : null}
           </div>
         </div>
 

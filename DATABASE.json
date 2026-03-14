@@ -7,7 +7,10 @@
     "id": "de817c58-a6ac-41c6-bab7-5b221313983c",
     "difficulty": "beginner",
     "category": "fundamentals",
-    "tags": ["output", "print"],
+    "tags": [
+      "output",
+      "print"
+    ],
     "estimatedMinutes": 3,
     "createdAt": "2024-01-01T08:00:00Z"
   },
@@ -19,7 +22,11 @@
     "id": "82249187-1145-4757-9409-6e59623040df",
     "difficulty": "beginner",
     "category": "fundamentals",
-    "tags": ["variables", "assignment", "strings"],
+    "tags": [
+      "variables",
+      "assignment",
+      "strings"
+    ],
     "estimatedMinutes": 4,
     "createdAt": "2024-01-01T08:15:00Z"
   },
@@ -31,7 +38,12 @@
     "id": "84cfbb32-9411-459f-806c-86103c3a54fe",
     "difficulty": "beginner",
     "category": "fundamentals",
-    "tags": ["types", "integers", "floats", "booleans"],
+    "tags": [
+      "types",
+      "integers",
+      "floats",
+      "booleans"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T08:30:00Z"
   },
@@ -43,7 +55,11 @@
     "id": "43ba63aa-59b8-45f4-ad63-70e199fee58c",
     "difficulty": "beginner",
     "category": "fundamentals",
-    "tags": ["math", "operators", "arithmetic"],
+    "tags": [
+      "math",
+      "operators",
+      "arithmetic"
+    ],
     "estimatedMinutes": 4,
     "createdAt": "2024-01-01T08:45:00Z"
   },
@@ -55,7 +71,11 @@
     "id": "c1e91a2b-4d3f-4e8a-b2c3-1d5e6f7g8h9i",
     "difficulty": "beginner",
     "category": "fundamentals",
-    "tags": ["strings", "concatenation", "formatting"],
+    "tags": [
+      "strings",
+      "concatenation",
+      "formatting"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T09:00:00Z"
   },
@@ -67,7 +87,11 @@
     "id": "d2f92b3c-5e4g-5f9b-c3d4-2e6f7g8h9i0j",
     "difficulty": "beginner",
     "category": "data-structures",
-    "tags": ["lists", "indexing", "arrays"],
+    "tags": [
+      "lists",
+      "indexing",
+      "arrays"
+    ],
     "estimatedMinutes": 6,
     "createdAt": "2024-01-01T09:15:00Z"
   },
@@ -79,7 +103,11 @@
     "id": "e3g93c4d-6f5h-6g0c-d4e5-3f7g8h9i0j1k",
     "difficulty": "beginner",
     "category": "control-flow",
-    "tags": ["loops", "iteration", "for"],
+    "tags": [
+      "loops",
+      "iteration",
+      "for"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T09:30:00Z"
   },
@@ -91,7 +119,11 @@
     "id": "f4h94d5e-7g6i-7h1d-e5f6-4g8h9i0j1k2l",
     "difficulty": "beginner",
     "category": "control-flow",
-    "tags": ["conditionals", "if-else", "decisions"],
+    "tags": [
+      "conditionals",
+      "if-else",
+      "decisions"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T09:45:00Z"
   },
@@ -103,7 +135,11 @@
     "id": "g5i95e6f-8h7j-8i2e-f6g7-5h9i0j1k2l3m",
     "difficulty": "intermediate",
     "category": "functions",
-    "tags": ["functions", "def", "return"],
+    "tags": [
+      "functions",
+      "def",
+      "return"
+    ],
     "estimatedMinutes": 6,
     "createdAt": "2024-01-01T10:00:00Z"
   },
@@ -115,7 +151,11 @@
     "id": "h6j96f7g-9i8k-9j3f-g7h8-6i0j1k2l3m4n",
     "difficulty": "intermediate",
     "category": "data-structures",
-    "tags": ["dictionaries", "key-value", "maps"],
+    "tags": [
+      "dictionaries",
+      "key-value",
+      "maps"
+    ],
     "estimatedMinutes": 6,
     "createdAt": "2024-01-01T10:15:00Z"
   },
@@ -127,7 +167,11 @@
     "id": "i7k07g8h-0j9l-0k4g-h8i9-7j1k2l3m4n5o",
     "difficulty": "intermediate",
     "category": "advanced-syntax",
-    "tags": ["list-comprehension", "syntax", "filtering"],
+    "tags": [
+      "list-comprehension",
+      "syntax",
+      "filtering"
+    ],
     "estimatedMinutes": 7,
     "createdAt": "2024-01-01T10:30:00Z"
   },
@@ -139,7 +183,10 @@
     "id": "j8l18h9i-1k0m-1l5h-i9j0-8k2l3m4n5o6p",
     "difficulty": "intermediate",
     "category": "functions",
-    "tags": ["lambda", "anonymous-functions"],
+    "tags": [
+      "lambda",
+      "anonymous-functions"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T10:45:00Z"
   },
@@ -151,7 +198,10 @@
     "id": "k9m29i0j-2l1n-2m6i-j0k1-9l3m4n5o6p7q",
     "difficulty": "intermediate",
     "category": "error-handling",
-    "tags": ["try-except", "error-handling"],
+    "tags": [
+      "try-except",
+      "error-handling"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T11:00:00Z"
   },
@@ -163,7 +213,11 @@
     "id": "l0n30j1k-3m2o-3n7j-k1l2-0m4n5o6p7q8r",
     "difficulty": "intermediate",
     "category": "fundamentals",
-    "tags": ["slicing", "indexing", "sequences"],
+    "tags": [
+      "slicing",
+      "indexing",
+      "sequences"
+    ],
     "estimatedMinutes": 6,
     "createdAt": "2024-01-01T11:15:00Z"
   },
@@ -175,7 +229,11 @@
     "id": "m1o41k2l-4n3p-4o8k-l2m3-1n5o6p7q8r9s",
     "difficulty": "beginner",
     "category": "control-flow",
-    "tags": ["while", "loops", "conditions"],
+    "tags": [
+      "while",
+      "loops",
+      "conditions"
+    ],
     "estimatedMinutes": 4,
     "createdAt": "2024-01-01T11:30:00Z"
   },
@@ -187,7 +245,10 @@
     "id": "n2p52l3m-5o4q-5p9l-m3n4-2o6p7q8r9s0t",
     "difficulty": "intermediate",
     "category": "control-flow",
-    "tags": ["nested-loops", "iteration"],
+    "tags": [
+      "nested-loops",
+      "iteration"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T11:45:00Z"
   },
@@ -199,7 +260,10 @@
     "id": "o3q63m4n-6p5r-6q0m-n4o5-3p7q8r9s0t1u",
     "difficulty": "beginner",
     "category": "fundamentals",
-    "tags": ["strings", "methods"],
+    "tags": [
+      "strings",
+      "methods"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T12:00:00Z"
   },
@@ -211,7 +275,11 @@
     "id": "p4r74n5o-7q6s-7r1n-o5p6-4q8r9s0t1u2v",
     "difficulty": "intermediate",
     "category": "file-io",
-    "tags": ["files", "reading", "writing"],
+    "tags": [
+      "files",
+      "reading",
+      "writing"
+    ],
     "estimatedMinutes": 6,
     "createdAt": "2024-01-01T12:15:00Z"
   },
@@ -223,7 +291,11 @@
     "id": "q5s85o6p-8t7u-8s2g-p6q7-8r9s0t1u2v3w",
     "difficulty": "beginner",
     "category": "data-structures",
-    "tags": ["tuples", "immutable", "sequences"],
+    "tags": [
+      "tuples",
+      "immutable",
+      "sequences"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T12:30:00Z"
   },
@@ -235,7 +307,11 @@
     "id": "r6t96p7q-9u8v-9t3h-q7r8-9s0t1u2v3w4x",
     "difficulty": "beginner",
     "category": "data-structures",
-    "tags": ["sets", "unique", "membership"],
+    "tags": [
+      "sets",
+      "unique",
+      "membership"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T12:45:00Z"
   },
@@ -247,7 +323,11 @@
     "id": "s7u07q8r-0v9w-0u4i-r8s9-0t1u2v3w4x5y",
     "difficulty": "advanced",
     "category": "oop",
-    "tags": ["classes", "objects", "oop"],
+    "tags": [
+      "classes",
+      "objects",
+      "oop"
+    ],
     "estimatedMinutes": 8,
     "createdAt": "2024-01-01T13:00:00Z"
   },
@@ -259,7 +339,11 @@
     "id": "t8v18r9s-1w0x-1v5j-s9t0-1u2v3w4x5y6z",
     "difficulty": "advanced",
     "category": "functions",
-    "tags": ["recursion", "functions", "algorithms"],
+    "tags": [
+      "recursion",
+      "functions",
+      "algorithms"
+    ],
     "estimatedMinutes": 7,
     "createdAt": "2024-01-01T13:15:00Z"
   },
@@ -271,7 +355,11 @@
     "id": "u9w29s0t-2x1y-2w6k-t0u1-2v3w4x5y6z7a",
     "difficulty": "beginner",
     "category": "data-structures",
-    "tags": ["lists", "methods", "manipulation"],
+    "tags": [
+      "lists",
+      "methods",
+      "manipulation"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T13:30:00Z"
   },
@@ -283,7 +371,11 @@
     "id": "v0x30t1u-3y2z-3x7l-u1v2-3w4x5y6z7a8b",
     "difficulty": "beginner",
     "category": "data-structures",
-    "tags": ["dictionaries", "methods", "key-value"],
+    "tags": [
+      "dictionaries",
+      "methods",
+      "key-value"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T13:45:00Z"
   },
@@ -295,7 +387,11 @@
     "id": "w1y41u2v-4z3a-4y8m-v2w3-4x5y6z7a8b9c",
     "difficulty": "intermediate",
     "category": "fundamentals",
-    "tags": ["imports", "modules", "libraries"],
+    "tags": [
+      "imports",
+      "modules",
+      "libraries"
+    ],
     "estimatedMinutes": 6,
     "createdAt": "2024-01-01T14:00:00Z"
   },
@@ -307,7 +403,11 @@
     "id": "x2z52v3w-5a4b-5z9n-w3x4-5y6z7a8b9c0d",
     "difficulty": "intermediate",
     "category": "advanced-syntax",
-    "tags": ["filter", "map", "functional"],
+    "tags": [
+      "filter",
+      "map",
+      "functional"
+    ],
     "estimatedMinutes": 6,
     "createdAt": "2024-01-01T14:15:00Z"
   },
@@ -319,7 +419,11 @@
     "id": "y3a63w4x-6b5c-6a0o-x4y5-6z7a8b9c0d1e",
     "difficulty": "beginner",
     "category": "fundamentals",
-    "tags": ["strings", "formatting", "f-strings"],
+    "tags": [
+      "strings",
+      "formatting",
+      "f-strings"
+    ],
     "estimatedMinutes": 5,
     "createdAt": "2024-01-01T14:30:00Z"
   },
@@ -331,7 +435,11 @@
     "id": "z4b74x5y-7c6d-7b1p-y5z6-7a8b9c0d1e2f",
     "difficulty": "advanced",
     "category": "advanced-syntax",
-    "tags": ["generators", "yield", "memory"],
+    "tags": [
+      "generators",
+      "yield",
+      "memory"
+    ],
     "estimatedMinutes": 7,
     "createdAt": "2024-01-01T14:45:00Z"
   },
@@ -343,8 +451,191 @@
     "id": "a5c85y6z-8d7e-8c2q-z6a7-8b9c0d1e2f3g",
     "difficulty": "intermediate",
     "category": "fundamentals",
-    "tags": ["slicing", "lists", "indexing"],
+    "tags": [
+      "slicing",
+      "lists",
+      "indexing"
+    ],
     "estimatedMinutes": 6,
     "createdAt": "2024-01-01T15:00:00Z"
+  },
+  {
+    "id": "76ae9807-9068-406d-b343-1ab9c4b61854",
+    "title": "Number Guessing Game",
+    "description": "Build a fun interactive game where the computer picks a random number and the player tries to guess it. Uses loops, conditionals, and the random module.",
+    "codeSnippet": "import random\n\ndef guessing_game():\n    secret = random.randint(1, 100)\n    attempts = 0\n    while True:\n        guess = int(input(\"Guess (1-100): \"))\n        attempts += 1\n        if guess < secret:\n            print(\"Too low!\")\n        elif guess > secret:\n            print(\"Too high!\")\n        else:\n            print(f\"Correct! You got it in {attempts} tries!\")\n            break\n\nguessing_game()",
+    "output": "Guess (1-100): 50\nToo high!\nGuess (1-100): 25\nToo low!\nGuess (1-100): 37\nCorrect! You got it in 3 tries!",
+    "difficulty": "intermediate",
+    "category": "projects",
+    "tags": [
+      "game",
+      "random",
+      "loops",
+      "input",
+      "project"
+    ],
+    "estimatedMinutes": 12,
+    "createdAt": "2026-03-14T12:45:54.426Z"
+  },
+  {
+    "id": "493aa743-c28f-4ce5-93c8-8d83acecad94",
+    "title": "Simple Calculator",
+    "description": "Build a command-line calculator that performs addition, subtraction, multiplication and division. Great practice for functions and user input handling.",
+    "codeSnippet": "def calculate(a, op, b):\n    if op == \"+\":\n        return a + b\n    elif op == \"-\":\n        return a - b\n    elif op == \"*\":\n        return a * b\n    elif op == \"/\":\n        return a / b if b != 0 else \"Error: division by zero\"\n    return \"Unknown operator\"\n\nprint(calculate(10, \"+\", 5))\nprint(calculate(10, \"/\", 3))\nprint(calculate(10, \"/\", 0))",
+    "output": "15\n3.3333333333333335\nError: division by zero",
+    "difficulty": "beginner",
+    "category": "projects",
+    "tags": [
+      "calculator",
+      "functions",
+      "arithmetic",
+      "project"
+    ],
+    "estimatedMinutes": 10,
+    "createdAt": "2026-03-14T12:45:54.426Z"
+  },
+  {
+    "id": "aee1a87f-5f6a-4d57-b1c1-084b39721d46",
+    "title": "FizzBuzz",
+    "description": "The classic programming challenge — print numbers 1 to 100, but replace multiples of 3 with Fizz, multiples of 5 with Buzz, and multiples of both with FizzBuzz.",
+    "codeSnippet": "for n in range(1, 21):\n    if n % 15 == 0:\n        print(\"FizzBuzz\")\n    elif n % 3 == 0:\n        print(\"Fizz\")\n    elif n % 5 == 0:\n        print(\"Buzz\")\n    else:\n        print(n)",
+    "output": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n16\n17\nFizz\n19\nBuzz",
+    "difficulty": "beginner",
+    "category": "projects",
+    "tags": [
+      "fizzbuzz",
+      "loops",
+      "modulo",
+      "conditionals",
+      "project"
+    ],
+    "estimatedMinutes": 8,
+    "createdAt": "2026-03-14T12:45:54.426Z"
+  },
+  {
+    "id": "1615472c-657c-4adb-ad11-05660fb643da",
+    "title": "Palindrome Checker",
+    "description": "Write a program that checks whether a word or phrase is a palindrome — reads the same forwards and backwards. Uses string slicing and comparison.",
+    "codeSnippet": "def is_palindrome(text):\n    cleaned = text.lower().replace(\" \", \"\")\n    return cleaned == cleaned[::-1]\n\nwords = [\"racecar\", \"hello\", \"A man a plan a canal Panama\", \"Python\"]\nfor word in words:\n    result = \"YES\" if is_palindrome(word) else \"NO\"\n    print(f\"{word!r}: {result}\")",
+    "output": "'racecar': YES\n'hello': NO\n'A man a plan a canal Panama': YES\n'Python': NO",
+    "difficulty": "beginner",
+    "category": "projects",
+    "tags": [
+      "palindrome",
+      "strings",
+      "slicing",
+      "functions",
+      "project"
+    ],
+    "estimatedMinutes": 8,
+    "createdAt": "2026-03-14T12:45:54.426Z"
+  },
+  {
+    "id": "41c79ed8-5dc6-4841-9f3a-9c66e0305c2c",
+    "title": "Password Generator",
+    "description": "Build a password generator that creates strong random passwords. Combines the random module with string manipulation to generate secure passwords of any length.",
+    "codeSnippet": "import random\nimport string\n\ndef generate_password(length=12):\n    chars = string.ascii_letters + string.digits + string.punctuation\n    password = \"\".join(random.choice(chars) for _ in range(length))\n    return password\n\nfor i in range(3):\n    print(generate_password(16))",
+    "output": "K#m2pL9vXr!qN5eW\nj@8TnQd3Yw%CfV6s\nRzHb1Kp&XmN8cL",
+    "difficulty": "intermediate",
+    "category": "projects",
+    "tags": [
+      "password",
+      "random",
+      "string",
+      "security",
+      "project"
+    ],
+    "estimatedMinutes": 10,
+    "createdAt": "2026-03-14T12:45:54.426Z"
+  },
+  {
+    "id": "f1480d5d-665d-4ddf-916a-bd4b772da003",
+    "title": "Word Frequency Counter",
+    "description": "Analyze a text and count how many times each word appears. Great introduction to dictionaries and text processing in Python.",
+    "codeSnippet": "def word_frequency(text):\n    words = text.lower().split()\n    freq = {}\n    for word in words:\n        word = word.strip(\".,!?\")\n        freq[word] = freq.get(word, 0) + 1\n    return dict(sorted(freq.items(), key=lambda x: x[1], reverse=True))\n\ntext = \"the cat sat on the mat the cat is back\"\nfreq = word_frequency(text)\nfor word, count in list(freq.items())[:5]:\n    print(f\"{word}: {count}\")",
+    "output": "the: 3\ncat: 2\nsat: 1\non: 1\nmat: 1",
+    "difficulty": "intermediate",
+    "category": "projects",
+    "tags": [
+      "text",
+      "dictionaries",
+      "sorting",
+      "analysis",
+      "project"
+    ],
+    "estimatedMinutes": 11,
+    "createdAt": "2026-03-14T12:45:54.426Z"
+  },
+  {
+    "id": "f0cddc57-5a8e-4137-9a9f-b23adfbd98b8",
+    "title": "Rock Paper Scissors",
+    "description": "Build a Rock Paper Scissors game against the computer. Combines random selection, user input, and conditionals into a fun interactive program.",
+    "codeSnippet": "import random\n\ndef rps(player):\n    choices = [\"rock\", \"paper\", \"scissors\"]\n    computer = random.choice(choices)\n    print(f\"Computer chose: {computer}\")\n    if player == computer:\n        return \"Tie!\"\n    wins = {\"rock\": \"scissors\", \"paper\": \"rock\", \"scissors\": \"paper\"}\n    return \"You win!\" if wins[player] == computer else \"You lose!\"\n\nprint(rps(\"rock\"))\nprint(rps(\"scissors\"))",
+    "output": "Computer chose: scissors\nYou win!\nComputer chose: rock\nYou lose!",
+    "difficulty": "beginner",
+    "category": "projects",
+    "tags": [
+      "game",
+      "random",
+      "conditionals",
+      "dictionaries",
+      "project"
+    ],
+    "estimatedMinutes": 10,
+    "createdAt": "2026-03-14T12:45:54.426Z"
+  },
+  {
+    "id": "76a86deb-9dd2-49ce-bc2d-6ef684368884",
+    "title": "BMI Calculator",
+    "description": "Create a health BMI (Body Mass Index) calculator that takes weight and height as input, computes the BMI, and categorizes the result. Good practice for functions and conditionals.",
+    "codeSnippet": "def bmi_category(bmi):\n    if bmi < 18.5:\n        return \"Underweight\"\n    elif bmi < 25:\n        return \"Normal weight\"\n    elif bmi < 30:\n        return \"Overweight\"\n    return \"Obese\"\n\ndef calculate_bmi(weight_kg, height_m):\n    bmi = weight_kg / (height_m ** 2)\n    return round(bmi, 1)\n\nbmi = calculate_bmi(70, 1.75)\nprint(f\"BMI: {bmi}\")\nprint(f\"Category: {bmi_category(bmi)}\")",
+    "output": "BMI: 22.9\nCategory: Normal weight",
+    "difficulty": "beginner",
+    "category": "projects",
+    "tags": [
+      "bmi",
+      "math",
+      "functions",
+      "health",
+      "project"
+    ],
+    "estimatedMinutes": 9,
+    "createdAt": "2026-03-14T12:45:54.426Z"
+  },
+  {
+    "id": "3dd03718-531f-42f7-a61f-097d7bda2c08",
+    "title": "Simple To-Do List",
+    "description": "Build a basic to-do list manager using a list and functions. Add, remove, and display tasks. A great introduction to managing state with Python data structures.",
+    "codeSnippet": "def todo_app():\n    tasks = []\n    \n    def add(task):\n        tasks.append(task)\n        print(f\"Added: {task}\")\n    \n    def remove(task):\n        if task in tasks:\n            tasks.remove(task)\n            print(f\"Done: {task}\")\n    \n    def show():\n        for i, t in enumerate(tasks, 1):\n            print(f\"  {i}. {t}\")\n    \n    add(\"Buy groceries\")\n    add(\"Learn Python\")\n    add(\"Go for a walk\")\n    show()\n    remove(\"Buy groceries\")\n    print(\"Remaining:\")\n    show()\n\ntodo_app()",
+    "output": "Added: Buy groceries\nAdded: Learn Python\nAdded: Go for a walk\n  1. Buy groceries\n  2. Learn Python\n  3. Go for a walk\nDone: Buy groceries\nRemaining:\n  1. Learn Python\n  2. Go for a walk",
+    "difficulty": "intermediate",
+    "category": "projects",
+    "tags": [
+      "todo",
+      "lists",
+      "functions",
+      "state",
+      "project"
+    ],
+    "estimatedMinutes": 12,
+    "createdAt": "2026-03-14T12:45:54.426Z"
+  },
+  {
+    "id": "9c0b9a26-1305-439a-b46a-bcfacbfdfb92",
+    "title": "Temperature Converter",
+    "description": "Build a multi-unit temperature converter that converts between Celsius, Fahrenheit, and Kelvin. Perfect for practicing functions and math operations.",
+    "codeSnippet": "def celsius_to_fahrenheit(c):\n    return (c * 9/5) + 32\n\ndef celsius_to_kelvin(c):\n    return c + 273.15\n\ndef convert_from_celsius(temp):\n    print(f\"{temp}°C = {celsius_to_fahrenheit(temp):.1f}°F\")\n    print(f\"{temp}°C = {celsius_to_kelvin(temp):.2f}K\")\n\nconvert_from_celsius(0)\nprint()\nconvert_from_celsius(100)",
+    "output": "0°C = 32.0°F\n0°C = 273.15K\n\n100°C = 212.0°F\n100°C = 373.15K",
+    "difficulty": "beginner",
+    "category": "projects",
+    "tags": [
+      "temperature",
+      "math",
+      "functions",
+      "conversion",
+      "project"
+    ],
+    "estimatedMinutes": 8,
+    "createdAt": "2026-03-14T12:45:54.426Z"
   }
 ]
